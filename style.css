@@ -1,0 +1,64 @@
+
+.wrap{
+    position: relative;
+    width: 100%;
+    display: block;
+    min-height: 200px;
+    background-color: whitesmoke;
+}
+
+
+.slide-content span{
+    font-size: 5rem;
+    color: #ffffff;
+
+}
+
+.arrow{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+#arrow-left{
+    border-width: 10px 15px 10px 0;
+    left :-15px;
+    border-color: transparent #1a2296 transparent;
+}
+#arrow-right{
+    border-width: 10px 0px 10px 15px;
+    right: -15px;
+    border-color: transparent  transparent transparent #1a2296;
+}
+
+.bg-dark h3, .bg-success h3{ 
+   color: #ffffff;
+   padding: 16px;
+}
+
+.slide-content button{
+    margin: 0 auto;
+}
+
+input[type=radio]{
+    margin-right: 5px;
+}
+
+#heading, #content{
+    border: 1px solid #ccc;
+    
+    padding: 10px;
+}
+
+.text-submit{
+    min-width: 200px;
+    margin: 0 auto ;
+}
+
+.result{
+    margin: 10px 0;
+}

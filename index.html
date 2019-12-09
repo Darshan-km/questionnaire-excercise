@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>questionnaire</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="wrap">
+                    <div id="arrow-left" class="arrow" style="display: none;"></div>
+                    <div id="slider">
+                        <div class="slide slide1">
+                            <div class="slide-content">
+                                <div class="bg-dark">
+                                    <h3>Question One</h3>
+                                </div>
+                                <div class="container text-center">
+                                    <div class="radio">
+                                        <label><input type="radio" name="optradio" id="qOneOptionOne"
+                                                onclick="getOptionValue()">Option A</label>
+                                    </div>
+
+                                    <div class="radio">
+                                        <label><input type="radio" name="optradio" id="qOneOptionTwo"
+                                                onclick="getOptionValue()">Option B</label>
+                                    </div>
+                                    <button id="q1" type="submit" class="btn btn-primary" onclick="slideRight()">Go To
+                                        Next Question</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slide slide2">
+                            <div class="slide-content">
+                                <div class="bg-dark">
+                                    <h3>Question Two</h3>
+                                </div>
+                                <div class="container text-center">
+                                    <div class="radio">
+                                        <label><input type="radio" name="optradio" id="qTwoOptionOne"
+                                                onclick="getOptionValueTwo()">Option 1</label>
+                                    </div>
+
+                                    <div class="radio">
+                                        <label><input type="radio" name="optradio" id="qTwoOptionTwo"
+                                                onclick="getOptionValueTwo()">Option 2</label>
+                                    </div>
+                                    <button id="q1" type="submit" class="btn btn-primary" onclick="slideRight()">Go To
+                                        Next Question</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slide slide3">
+                            <div class="slide-content">
+                                <div class="bg-dark">
+                                    <h3>Question Three</h3>
+                                </div>
+                                <div class="container text-center">
+                                    <div class="radio">
+                                        <label><input type="radio" name="optradio" id="qThreeOptionOne"
+                                                onclick="getOptionValueThree()">Option X</label>
+                                    </div>
+
+                                    <div class="radio">
+                                        <label><input type="radio" name="optradio" id="qThreeOptionTwo"
+                                                onclick="getOptionValueThree()">Option Y</label>
+                                    </div>
+                                    <button id="q1" type="submit" class="btn btn-primary" onclick="slideRight()">Go To
+                                        Next Question</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slide slide4">
+                            <div class="slide-content">
+                                <div class="slide-content">
+                                    <div class="bg-dark">
+                                        <h3>Question Four</h3>
+                                    </div>
+                                    <div class="text-submit">
+                                    <input type="text" id="qFourTextBoxInput" value="" maxlength="50" />
+                                    <button type="submit" class="btn btn-primary" onclick="getOptionValueFour()">Go To Next
+                                        Question</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="slide slide5">
+                            <div class="slide-content">
+                                <div class="bg-dark">
+                                    <h3>Question Five</h3>
+                                </div>
+                                <div class="textSubmit">
+                                <input type="text" id="qFiveTextBoxInput" maxlength="50"  value="" />
+                                <button type="submit" class="btn btn-primary" onclick="getOptionValueFive()">Go To Next
+                                    Question</button>
+                                </div>   
+                            </div>
+
+                        </div>
+
+                        <div class="slide slide6">
+                            <div class="slide-content text-center">
+                                <div class="bg-success">
+                                    <h3 class="text-center">Thank You</h3>
+                                </div>
+                                <button type="submit" class="btn btn-success bg-dark" onClick="showResult()">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="arrow-right" class="arrow" style="display: none;"></div>
+                </div>
+            </div>
+        </div>
+        <div class="container result">
+        <div id="heading"></div>
+        <div id="content"></div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
